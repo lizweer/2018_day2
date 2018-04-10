@@ -24,3 +24,19 @@ def test_find_maxima_5():
 def test_find_maxima_6():
     x = [4, 2, 1, 3, 1]
     assert find_maxima(x) == [0,3]
+
+def test_find_maxima_7():
+    x = [1, 2, 2, 1]
+    assert find_maxima(x) == [1,2]
+
+def test_find_maxima_8():
+    x = [1, 2, 2, 3, 1]
+    assert find_maxima(x) == [3]
+
+def test_find_maxima_9():
+    x = [1, 3, 2, 2, 1]
+    assert find_maxima(x) == [1]
+
+def test_find_maxima_10():
+    x = [3, 2, 2, 3]
+    assert find_maxima(x) == [0,3]
