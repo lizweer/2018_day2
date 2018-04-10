@@ -40,3 +40,7 @@ def test_find_maxima_9():
 def test_find_maxima_10():
     x = [3, 2, 2, 3]
     assert find_maxima(x) == [0,3]
+
+def test_find_maxima_11():
+    x = [1, 2, 2, 2, 1]
+    assert find_maxima(x) == [1,2,3]

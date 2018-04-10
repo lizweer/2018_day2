@@ -19,7 +19,8 @@ def find_maxima(x):
     for i in range(len(x)):
 
         if i != len(x) - 1 and x[i] == x[i+1]:
-            plateau.append(i)
+            if i not in plateau:
+                plateau.append(i)
             plateau.append(i+1)
         if i == len(x) - 1:
             if x[i-1] < x[i]:
